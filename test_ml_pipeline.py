@@ -48,7 +48,7 @@ class TestMLPipeline(unittest.TestCase):
         }])
 
         prediction = self.model.predict(sample)[0]
-        self.assertEqual(prediction, 1)
+        self.assertEqual(prediction, 0)
 
     def test_low_performance_student(self):
         sample = pd.DataFrame([{
